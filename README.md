@@ -7,7 +7,7 @@ Android SDK, Gradle plugin, and sample app for capturing network traffic.
 - `gradle-plugin/` – Gradle plugin (`com.github.tracer-inspector.tracer-android:gradle-plugin`)
 - `sample/` – Demo app using the SDK and plugin
 
-## Quick start (JitPack, v1.0.2)
+## Quick start (JitPack, v1.0.3)
 1) Add JitPack to repositories (settings.gradle.kts):
 ```kotlin
 dependencyResolutionManagement {
@@ -28,7 +28,7 @@ buildscript {
         maven("https://jitpack.io")
     }
     dependencies {
-        classpath("com.github.tracer-inspector.tracer-android:gradle-plugin:v1.0.2")
+        classpath("com.github.tracer-inspector.tracer-android:gradle-plugin:v1.0.3")
     }
 }
 
@@ -37,7 +37,7 @@ apply(plugin = "io.tracer.plugin")
 3) Add the SDK dependency:
 ```kotlin
 dependencies {
-    debugImplementation("com.github.tracer-inspector.tracer-android:sdk:v1.0.2")
+    debugImplementation("com.github.tracer-inspector.tracer-android:sdk:v1.0.3")
 }
 ```
 4) Initialize Tracer in your `Application`/debug init:

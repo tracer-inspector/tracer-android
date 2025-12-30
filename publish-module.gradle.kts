@@ -1,5 +1,5 @@
 val PUBLISH_GROUP_ID = "io.tracer"
-val PUBLISH_VERSION = "1.0.0"
+val PUBLISH_VERSION = "1.0.3"
 val PUBLISH_ARTIFACT_ID = extra.get("artifactId") as? String ?: project.name
 
 group = PUBLISH_GROUP_ID
