@@ -16,17 +16,11 @@ afterEvaluate {
                 artifactId = PUBLISH_ARTIFACT_ID
                 version = PUBLISH_VERSION
 
-                // If it's an Android Library
                 if (project.plugins.hasPlugin("com.android.library")) {
                     from(components["release"])
-                } 
-                // If it's a Java/Kotlin Library (Plugin)
-                else if (project.plugins.hasPlugin("java-gradle-plugin")) {
-                    // Gradle Plugins handle their own component registration usually,
-                    // but we add this for custom jar tasks if needed.
-                    // For now, we let the 'java-gradle-plugin' do its magic or configure explicitly below.
                 } else {
-                     from(components["java"])
+                    // For JVM libraries and Gradle plugins
+                    from(components["java"])
                 }
 
                 pom {
