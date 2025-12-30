@@ -8,9 +8,10 @@ Android SDK, Gradle plugin, and sample app for capturing network traffic.
 - `sample/` – Demo app using the SDK and plugin
 
 ## Quick start (JitPack, v1.0.2)
-1) Add JitPack to repositories (settings.gradle(.kts) or top-level buildscript):
+1) Add JitPack to repositories (settings.gradle.kts):
 ```kotlin
 dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
