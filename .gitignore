@@ -1,0 +1,30 @@
+# Android
+.gradle/
+**/build
+capture/
+*.apk
+*.aar
+*.jks
+*.keystore
+
+# Kotlin/JVM
+bin/
+out/
+
+# IDEs
+.idea/
+*.iml
+*.iws
+.project
+.settings
+.classpath
+.DS_Store
+
+# Node/Web
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Local config
+local.properties
+.gemini/
